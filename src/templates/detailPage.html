@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <title>Detail Produk</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="/logo.png" alt="logo" /></a>
+
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#">Area Pengiriman</a></li>
+      </ul>
+
+      <div class="nav-icon">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="profile.html" id="profileLink"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+        <a href="#" id="logout"
+          ><i class="fa-solid fa-right-from-bracket"></i
+        ></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="product-detail">
+          <div class="farmer-info">
+            <div class="farmer-image-container">
+              <div
+                class="farmer-image"
+                style="background-image: url('${vegetable.image}')"
+              ></div>
+              <button class="check-store-button">Cek Toko</button>
+            </div>
+            <div class="farmer-details">
+              <h2>Petani</h2>
+              <p class="farmer-name">${vegetable.name}</p>
+              <p class="farmer-location">${vegetable.category}</p>
+              <div class="organic-level">
+                <h3>Tingkat Keorganisasian</h3>
+                <button class="organic-button">${vegetable.category}</button>
+                <p>${vegetable.description}</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <h2>${vegetable.name}</h2>
+            <div class="price">
+              <span class="current-price">Rp. ${vegetable.price}</span> / 1 kg
+            </div>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="rating-value">${vegetable.rate}</span>
+              <span class="review-count">(20)</span>
+            </div>
+            <button class="buy-button">Beli</button>
+            <button class="share-button">Share</button>
+          </div>
+        </section>
+        <section class="related-products">
+          <h3>Sering dibeli bersama</h3>
+          <div class="related-product-list">
+            <div class="related-product-item"></div>
+            <div class="related-product-item"></div>
+            <div class="related-product-item"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
