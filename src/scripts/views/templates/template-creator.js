@@ -23,20 +23,20 @@ const createProductDetailTemplate = (product) => `
           <button class="check-store-button">Cek Toko</button>
         </div>
         <div class="farmer-details">
-          <h2>Petani</h2>
+          <h2>Detail</h2>
           <p class="farmer-name">${product.name}</p>
-          <p class="farmer-location">${product.category}</p>
+          <p class="farmer-location">${product.type}</p>
           <div class="organic-level">
             <h3>Tingkat Keorganisasian</h3>
-            <button class="organic-button">${product.category}</button>
-            <p>${product.description}</p>
+            <p class="product-category">${product.category}</p>
+            <p class="product-desc">${product.description}</p>
           </div>
         </div>
       </div>
       <div class="product-info">
         <h2>${product.name}</h2>
         <div class="price">
-          <span class="current-price">Rp. ${product.price}</span> / 1 kg
+          <span class="current-price">${product.price}</span> / 1 kg
         </div>
         <div class="rating">
           <span class="star">★</span>
